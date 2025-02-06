@@ -1,0 +1,30 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --app-height: 100%;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  height: var(--app-height);
+  -webkit-text-size-adjust: 100%;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
